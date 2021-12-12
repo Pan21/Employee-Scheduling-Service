@@ -1,0 +1,390 @@
+/*Styling Reset*/
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: PTserif;
+  
+      
+    }
+  
+  
+  
+  html,body{
+      
+      
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+      scroll-padding-top: 145px;
+      
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+      margin-bottom: 15px;
+    }
+  
+  a{
+    font-size: large;
+    font-weight: bold;
+  }
+
+
+  /* Main page styling */
+
+  .content-contain{
+      background-color: rgb(39,56,72);
+      min-height: 100vh;
+      min-width: 500px;
+      display: flex;
+      #660099
+      #FF6600
+  }
+
+
+  .menu-bar{
+    height: 900px;
+    width: 10%;
+    background-color: rgb(152,111,49);
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .menu-bar h1{
+    width: 100%;
+    height: 20%;
+    font-style: italic;
+    font-size: 52px;
+    background-image: url(../img/ESSlogo.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+  background-position: center;
+  }
+
+  #option-menu{
+    padding-top: 150px ;
+    display: flex;
+    visibility:hidden;
+    flex-direction: column;
+    height: 70%;
+  }
+  #option-menu a{
+    margin-top: 50px;
+    color: rgb(212,211,206);
+    text-decoration: none;
+    font-size: 22px;
+
+
+  }
+
+  #login-button{
+    display: block;
+    width: 80%;
+    height: 60px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(212,211,206);
+    font-size: 32px;
+    color: rgb(48,48,48);
+
+  }
+
+  #logout{
+    display: none;
+    width: 80%;
+    height: 60px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(212,211,206);
+    font-size: 32px;
+    color: rgb(48,48,48);
+  }
+
+
+  .schedule-container{
+    width: 70%;
+    min-height: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    
+  }
+
+  .schedule-container h2 {
+    font-size: 42px;
+    font-style: italic;
+    color: rgb(212,211,206);
+  }
+
+  .schedule-box {
+    min-height: 80%;
+    width: 100%;
+    padding: 35px;
+    border-radius: 15px;
+    background-color: rgb(48,48,48);
+    background-image: linear-gradient(to right, rgba(48, 48, 48, 0.6), rgba(48, 48, 48, 0.6)), url(../img/ESSlogo.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+  background-position: center;
+  }
+
+  .names-contain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-width:5px; 
+    border-bottom-style:outset;
+  }
+  .names-contain p{
+    width: 20%;
+    font-size: 22px;
+    color: rgb(212,211,206);
+    margin-bottom: 10px;
+  }
+
+  .emp-schedule{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .emp-schedule p{
+    width: 20%;
+    background-color: rgb(212,211,206);
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+
+  .modal {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    
+    height: 400px;
+    max-height: 100%;
+    
+    position: fixed;
+    
+    z-index: 100;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(212,211,206);
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
+  }
+  .closed {
+    display: none;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .modal-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 20px;
+  }
+
+
+  .modal .close-button {
+    position: absolute;
+    z-index: 1;   
+    top: 10px;
+    right: 20px;    
+    border: 0;
+    background: rgb(48,48,48);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+  }
+
+  /* modal login style */
+
+  .login-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .login-form label{
+    margin: 15px;
+  }
+
+  .login-form input{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+
+  #close-signin{
+
+    display: block;
+    width: 60%;
+    height: 60px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(48,48,48);
+    color: rgb(212,211,206);
+    font-size: 22px;
+
+  }
+
+  /* Content edit Modal */
+
+  .edit-modal {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    
+    height: 400px;
+    max-height: 100%;
+    
+    position: fixed;
+    
+    z-index: 100;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(212,211,206);
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
+  }
+  .closed {
+    display: none;
+  }
+
+  .modal-edit-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 20px;
+  }
+
+
+  .edit-modal .close-edit-button {
+    position: absolute;
+    z-index: 1;   
+    top: 10px;
+    right: 20px;    
+    border: 0;
+    background: rgb(48,48,48);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+  }
+
+
+  #day-select{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #name-select{
+    width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+
+  #submit-edit-button{
+
+    display: block;
+    width: 60%;
+    height: 60px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(48,48,48);
+    color: rgb(212,211,206);
+    font-size: 22px;
+
+  }
+
+  #schedChangeA{
+    width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  }
+
+  #schedChangeB{
+    width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  }
+  
+
+  @media (max-width: 800px) {
+
+    .menu-bar h1{
+      font-size: 32px;
+
+    }
+    .names-contain p{
+      font-size: 16px;
+    }
+    #login-button{
+      font-size: 22px;
+    }
+    #logout{
+      font-size: 22px;
+    }
+
+    #option-menu a{
+      font-size: 16px;
+    }
+    .emp-schedule p{
+      font-size: 16px;
+    }
+
+
+  }

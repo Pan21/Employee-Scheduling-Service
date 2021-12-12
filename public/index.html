@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee Scheduling Service</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+  </head>
+  <body>
+
+    <div class="content-contain">
+      <div class="menu-bar">
+        <h1></h1>
+
+        <div id="option-menu">
+
+          <a id="linkStyles"  href="#">Personal Schedule</a>
+
+          <a class="linkStyles" href="#">Request Time off</a>
+
+          <a class="linkStyles" href="#">Submit Sick day</a>
+
+          <a id="edit-button" href="#">Admin Panel</a>
+
+
+                  
+  </div>
+
+  <button id="login-button">Login</button>
+  <button  id="logout" onclick="signout()">Logout</button>
+
+
+
+      </div>
+
+      
+
+
+      <div class="schedule-container">
+
+        <h2>Store-wide Schedule</h2>
+
+        <div class="schedule-box">
+          <div class="names-contain">
+            <p>Names:</p>
+            <p>Monday</p>
+            <p>Tuesday</p>
+            <p>Wendsday</p>
+            <p>Thursday</p>
+            <p>Friday</p>
+          </div>
+
+          <div id="name-contain">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay closed" id="modal-overlay"></div>
+
+
+
+<div class="modal closed" id="modal">
+  <button class="close-button" id="close-button">X</button>
+  <div class="modal-guts">
+    <div class="login-form">
+      <h4>Login</h4>
+      <label for="email">Email Address: </label>
+      <input id="loginemail" type="text">
+      <label for="pw">Password: </label>
+      <input id="loginpassword" type="password">
+      <button onclick="signIn()" id="close-signin" >Sign In</button>
+    </div>
+    
+  </div>
+</div>
+
+<div class="edit-modal closed" id="edit-modal">
+  <button class="close-edit-button" id="close-edit-button">X</button>
+  <div class="modal-edit-guts">
+    <div class="login-form">
+      <h4>Login</h4>
+
+      <label for="emp">Select Employee </label>
+        <div class="custom-select" style="width:200px;">
+          <select id="name-select" name="empSel">
+
+          </select>
+        </div>
+
+      <select id="day-select">
+        <option value="#">Day of the Week</option>
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wendsday">Wendsday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+      </select>
+
+      <label for="change">Input new Schedule:  </label>
+      <div>
+        <input id="schedChangeA" type="text">
+
+        <label for="change">To  </label>
+        <input id="schedChangeB" type="text">
+
+      </div>
+      
+      <button onclick="updateSchedule()" id="submit-edit-button" >Update Schedule</button>
+    </div>
+    
+  </div>
+</div>
+
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/9.5.0/firebase-app-compat.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/9.5.0/firebase-auth-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-database-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-firestore-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-functions-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-messaging-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-storage-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-analytics-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-remote-config-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-performance-compat.js"></script>
+        <!-- 
+          initialize the SDK after all desired features are loaded, set useEmulator to false
+          to avoid connecting the SDK to running emulators.
+        -->
+        <script src="lib/jquery-3.6.0.min.js"></script>
+        <script src="app/app.js"></script>
+        <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+        
+
+  </body>
+</html>

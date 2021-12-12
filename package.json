@@ -1,0 +1,13 @@
+{
+  "name": "wk10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "firebase Serve": "firebase serve --only hosting",
+    "firebase deploy": "firebase deploy --except functions"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
