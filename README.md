@@ -6,7 +6,7 @@ This program also offers the Employer easy access to update and or modify an emp
 
 ## Adding Employee's
 
-ESS allows admins to onboard new employee's and to set a schedule on the application.
+ESS allows admins to onboard new employee's and to set a schedule on the application. This is done by inputing the Users name Followed by each day of their schedule. Once the schedule is set then the admin confirms.
 
 
 ## Editing existing schedules
@@ -15,7 +15,7 @@ ESS allows the admin to modify each individual schedule by first selecting the e
 
 ## Deleting Former employee's
 
-ESS also have the ability to Remove employee's who are no longer present within the company.
+ESS also have the ability to Remove employee's who are no longer present within the company. This is done by first selecting an employee from a drop down then confirming their deleting with a button.
 
 # Admin login
 
