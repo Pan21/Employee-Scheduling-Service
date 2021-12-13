@@ -69,7 +69,7 @@ function signIn(){
         `)
           
 
-          console.log(doc.id, " => ", doc.data());
+
       });
   });
 
@@ -165,7 +165,7 @@ $(document).ready(function() {
 
         `)       
 
-          console.log(doc.id, " => ", doc.data());
+
       });
   });
   var _db = "";
@@ -231,7 +231,6 @@ openEditButton.addEventListener("click", function() {
 
         `)
         
-          console.log(doc.id, " => ", doc.data());
       });
 
     })
@@ -320,18 +319,10 @@ opendeleteButton.addEventListener("click", function() {
 
         `)
         
-          console.log(doc.id, " => ", doc.data());
       });
 
     })
 
-  _db.collection("employees").doc("DC").delete().then(() => {
-    console.log("Document successfully deleted!");
-}).catch((error) => {
-    console.error("Error removing document: ", error);
-});
-
-    
 });
 
 closedeleteButton.addEventListener("click", function() {
