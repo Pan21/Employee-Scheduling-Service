@@ -19,9 +19,9 @@
 
           <a id="linkStyles"  href="#">Personal Schedule</a>
 
-          <a class="linkStyles" href="#">Request Time off</a>
+          <a id="button-add" href="#">Add Employee</a>
 
-          <a class="linkStyles" href="#">Submit Sick day</a>
+          <a id="button-delete" href="#">Remove Employee</a>
 
           <a id="edit-button" href="#">Admin Panel</a>
 
@@ -77,6 +77,49 @@
     
   </div>
 </div>
+
+
+<div class="modal-add add-closed" id="modal-add">
+  <button class="close-add-button" id="close-add-button">X</button>
+  <div class="modal-add-guts">
+    <div class="login-form">
+      <h4>Login</h4>
+      <label for="change">Input new Schedule:  </label>
+      <div>
+        <input id="nameInp" type="text" placeholder="Enter Employee Name">
+        <input id="mondayInp" type="text" placeholder="Monday's Schedule">
+        <input id="tuesdayInp" type="text" placeholder="Tuesday's Schedule">
+        <input id="wendsdayInp" type="text" placeholder="Wendsday's Schedule">
+        <input id="thursdayInp" type="text" placeholder="Thursday's Schedule">
+        <input id="fridayInp" type="text" placeholder="Friday's Schedule">
+      <button onclick="addEmployee()" id="submit-add-button" >Sign In</button>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
+<div class="modal-delete delete-closed" id="modal-delete">
+  <button class="close-delete-button" id="close-delete-button">X</button>
+  <div class="modal-delete-guts">
+    <div class="delete-form">
+      <h4>Select Employee to Remove</h4>
+
+        <div class="custom-select" style="width:200px;">
+          <select id="employee-delete-select" name="empSel">
+
+          </select>
+        </div>
+
+    </div>
+      <button onclick="deleteEmployee()" id="submit-delete-button" >Remove Employee</button>
+    </div>
+    
+  </div>
+
+
+
 
 <div class="edit-modal closed" id="edit-modal">
   <button class="close-edit-button" id="close-edit-button">X</button>

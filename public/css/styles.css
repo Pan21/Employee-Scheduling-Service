@@ -361,6 +361,158 @@
   box-sizing: border-box;
 
   }
+
+
+  .modal-add {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    
+    height: 600px;
+    max-height: 100%;
+    
+    position: fixed;
+    
+    z-index: 100;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(212,211,206);
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
+  }
+
+  .modal-add-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 20px;
+  }
+
+
+  .modal-add .close-add-button {
+    position: absolute;
+    z-index: 1;   
+    top: 10px;
+    right: 20px;    
+    border: 0;
+    background: rgb(48,48,48);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+  }
+
+  .add-closed {
+    display: none;
+  }
+
+  #submit-add-button{
+
+    display: block;
+    width: 60%;
+    height: 60px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(48,48,48);
+    color: rgb(212,211,206);
+    font-size: 22px;
+
+  }
+
+
+
+  .modal-delete {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    
+    height: 400px;
+    max-height: 100%;
+    
+    position: fixed;
+    
+    z-index: 100;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(212,211,206);
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  .modal-delete-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 20px;
+    overflow: hidden;
+  }
+
+
+  .modal-delete .close-delete-button {
+    position: absolute;
+    z-index: 1;   
+    top: 10px;
+    right: 20px;    
+    border: 0;
+    background: rgb(48,48,48);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+  }
+
+  .delete-closed {
+    display: none;
+  }
+
+  #submit-delete-button{
+
+    display: block;
+    width: 60%;
+    height: 60px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(48,48,48);
+    color: rgb(212,211,206);
+    font-size: 22px;
+
+  }
+
+  #employee-delete-select{
+
+    width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  }
+
+  .delete-form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+
+
+
+
   
 
   @media (max-width: 800px) {
