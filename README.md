@@ -17,6 +17,14 @@ ESS allows the admin to modify each individual schedule by first selecting the e
 
 ESS also have the ability to Remove employee's who are no longer present within the company. This is done by first selecting an employee from a drop down then confirming their deleting with a button.
 
+## Technologies used
+
+- HTML
+- CSS
+- JS
+- Firebase
+- Firestore DB
+
 # Admin login
 
 ### Email: admin@admin.com
